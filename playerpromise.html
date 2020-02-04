@@ -1,0 +1,90 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>
+
+        </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="playerpromise.js"></script>
+    
+    </head>
+    <style>
+        .maindiv
+        {
+            height:100px;
+            width:100px;
+            background-color: bisque;
+        }
+    </style>
+    <body>
+        <div class="container">
+
+       
+        <div class="card-deck">
+            <div class="card mt-5">
+             
+              <div class="card-body">
+                <h5 class="card-title">TEAM 1 SCORE</h5>
+                <div id="score1" class="d-flex justify-content-around">
+                  <label>current player:</label><span id="team1spanpl"></span>
+                  <label>current score:</label><span id="team1span"></span>
+                </div>
+               
+                <h6>Individual scores of team1</h6>
+                <ul>
+                  <li>player1<span id="player1team1"></span></li>
+                  <li>player2<span id="player2team1"></span></li>
+                  <li>player3<span id="player3team1"></span></li>
+                  <li>player4<span id="player4team1"></span></li>
+                  <li>player5<span id="player5team1"></span></li>
+                  <li>player6<span id="player6team1"></span></li>
+                  <li>player7<span id="player7team1"></span></li>
+                  <li>player8<span id="player8team1"></span></li>
+                  <li>player9<span id="player9team1"></span></li>
+                  <li>player10<span id="player10team1"></span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card mt-5">
+              
+              <div class="card-body">
+                <h5 class="card-title">TEAM 2 SCORE</h5>
+                <div id="score2" class="d-flex justify-content-between">
+                  <label>current player:</label><span id="team2spanpl"></span>
+                  <label>current score:</label><span id="team2span"></span>
+                </div>
+               
+                <h6>Individual scores of team2</h6>
+                <ul>
+                  <li>player1<span id="player1team2"></span></li>
+                  <li>player2<span id="player2team2"></span></li>
+                  <li>player3<span id="player3team2"></span></li>
+                  <li>player4<span id="player4team2"></span></li>
+                  <li>player5<span id="player5team2"></span></li>
+                  <li>player6<span id="player6team2"></span></li>
+                  <li>player7<span id="player7team2"></span></li>
+                  <li>player8<span id="player8team2"></span></li>
+                  <li>player9<span id="player9team2"></span></li>
+                  <li>player10<span id="player10team2"></span></li>
+                </ul>
+              </div>
+            </div>
+           
+          </div>
+
+          <div class="d-flex justify-content-between">
+            <div class="mt-5">
+                <button id="btn1" onclick="team1scores('1')">Team1-Play</button>
+            </div>
+  
+            <div class="mt-5">
+              <button id="btn2" onclick="team2scores('2')">Team2-Play</button>
+          </div>
+          </div>
+          <div class="mt-5 d-flex justify-content-center">
+              <button id="result" onclick="display();" disabled="disabled">DisplayWinner</button>
+          </div>
+          
+        </div>
+        </body>
+        </html>
